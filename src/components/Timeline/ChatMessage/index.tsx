@@ -1,5 +1,5 @@
 import { Box, Typography } from '@mui/material';
-import { Message } from '../../api/types';
+import { Message } from '../../../api/types';
 import moment from 'moment';
 
 interface ChatMessageProps {
