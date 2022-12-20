@@ -23,7 +23,8 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ## Design
 
 Design file is design.dio, and can be viewed with design.io
-<img width="689" alt="Screenshot 2022-11-30 at 16 15 50" src="https://user-images.githubusercontent.com/6938921/204844971-43724843-7953-4cd2-b440-f661fca68cf3.png">
+<img width="709" alt="Screenshot 2022-12-20 at 22 49 18" src="https://user-images.githubusercontent.com/6938921/208774766-8aef2119-f1bf-47fb-8701-6cd150a9a361.png">
+
 
 ## TODO
 
