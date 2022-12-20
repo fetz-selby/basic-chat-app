@@ -10,6 +10,9 @@ from [doodle](https://chatty.doodle-test.com/api/chatty/v1.0). The API must be u
 This is a [cra](https://create-react-app.dev/) application which uses [Material UI](https://mui.com/)
 for some of the base UI components. [Zustand](https://www.npmjs.com/package/zustand) is used for state management.
 
+##### NB: Configurations [`/src/appConstants.ts`]
+Modify the appConstants file constants to suite your config.
+
 ## Getting Started
 
 First, run the development server:
