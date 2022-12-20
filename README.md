@@ -28,7 +28,7 @@ Design file is design.dio, and can be viewed with design.io
 ## Recommended Improvements / Suggestions
 
 API response should return latest entries first(Stack DS), and the API should support pagination.
-Also, if the API supports websockets, we could use that to get the latest messages without having to poll from the API.
+Also, if the API supports websockets, we could use that to get the latest messages without having to pull from the API.
 
 ## TODO
 
