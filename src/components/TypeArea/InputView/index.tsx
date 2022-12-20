@@ -9,13 +9,11 @@ interface InputViewProps {
 const buttonSX = {
   height: '100%',
   width: '100%',
-  backgroundColor: '#d32f2f',
+  backgroundColor: '#ff8a65',
 };
 
-const InputView = ({
-  onSendClicked,
-}: InputViewProps) => {
-  const {value, setValue, handleOnSend} = useInputView(onSendClicked);
+const InputView = ({ onSendClicked }: InputViewProps) => {
+  const { value, setValue, handleOnSend } = useInputView(onSendClicked);
 
   return (
     <Grid container spacing={1}>

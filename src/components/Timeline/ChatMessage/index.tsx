@@ -22,7 +22,7 @@ const otherChartMessageSX = (isSmallScreen: boolean) => ({
 });
 
 const selfChartMessageSX = {
-  backgroundColor: '#ffee58',
+  backgroundColor: '#fff59d',
 };
 
 const labelSX = { color: '#aeaeae' };
