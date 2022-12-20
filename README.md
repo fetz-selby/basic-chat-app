@@ -25,6 +25,10 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 Design file is design.dio, and can be viewed with design.io
 <img width="709" alt="Screenshot 2022-12-20 at 22 49 18" src="https://user-images.githubusercontent.com/6938921/208774766-8aef2119-f1bf-47fb-8701-6cd150a9a361.png">
 
+## Recommended Improvements / Suggestions
+
+API response should return latest entries first(Stack DS), and the API should support pagination.
+Also, if the API supports websockets, we could use that to get the latest messages without having to poll from the API.
 
 ## TODO
 
