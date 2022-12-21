@@ -23,7 +23,7 @@ const Timeline = () => {
   );
 
   if (hasError) {
-    return <Error message="Something went wrong" />;
+    return <Error message="Something went wrong, please try again later" />;
   }
 
   return (
