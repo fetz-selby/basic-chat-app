@@ -3,9 +3,11 @@ import InfiniteScroll from 'react-infinite-scroll-component';
 import ChatMessage from './ChatMessage';
 import { Message } from '../../api/types';
 import { useChatTimeline } from '../../hooks/useChatTimeline';
+import { Error } from '../Error';
 
 const Timeline = () => {
-  const { smallDevice, data, author, hasMore, next } = useChatTimeline();
+  const { smallDevice, data, author, hasMore, next, hasError } =
+    useChatTimeline();
 
   const renderChatMessages = useMemo(
     () =>
@@ -19,6 +21,10 @@ const Timeline = () => {
       )),
     [data, author, smallDevice]
   );
+
+  if (hasError) {
+    return <Error message="Something went wrong" />;
+  }
 
   return (
     <InfiniteScroll

@@ -18,6 +18,7 @@ interface State {
   messages: Maybe<Message[]>;
   addMessages: (messages: Message[]) => void;
   since: number;
+  hasError: boolean;
   hasMore: boolean;
   setSince: (since: number) => void;
   fetchNext: () => void;
@@ -37,11 +38,22 @@ export const useStore = create<State>((set, get) => ({
     set({ messages: [...(messages || []), ..._messages] });
   },
   since: BEGIN_SINCE,
+  hasError: false,
   hasMore: true,
   setSince: (since: number) => set({ since }),
   fetchNext: async () => {
     const { since, addMessages, limit } = get();
-    const data = await getMessages(`&since=${since}&limit=${limit}`);
+    let data = null;
+    try {
+      data = await getMessages(`&since=${since}&limit=${limit}`);
+      set({ hasError: false });
+    } catch (e) {
+      set({ hasError: true });
+
+      /* Send error log to an observability */
+      console.log(e);
+      return;
+    }
     if (data && data.length === 0) {
       set({ hasMore: false });
       return;

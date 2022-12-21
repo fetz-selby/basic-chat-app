@@ -4,11 +4,11 @@ import { useMedia } from './useMedia';
 import { FETCH_LIMIT } from '../appConstants';
 
 const useChatTimeline = () => {
-  const { author } = useStore();
+  const { author, hasError } = useStore();
   const { data, next, hasMore } = useFetch(FETCH_LIMIT);
   const { smallDevice } = useMedia();
 
-  return { data, next, hasMore, author, smallDevice };
+  return { data, next, hasMore, author, smallDevice, hasError };
 };
 
 export { useChatTimeline };
