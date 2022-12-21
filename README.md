@@ -11,6 +11,7 @@ This is a [cra](https://create-react-app.dev/) application which uses [Material 
 for some of the base UI components. [Zustand](https://www.npmjs.com/package/zustand) is used for state management.
 
 ##### NB: Configurations [`/src/appConstants.ts`]
+
 Modify the appConstants file constants to suite your config.
 
 ## Getting Started
@@ -36,4 +37,5 @@ Also, if the API supports websockets, we could use that to get the latest messag
 ## TODO
 
 - [ ] Automatic scrolling to the bottom of the chat
+- [ ] Properly styled error messages :)
 - [ ] Create a UI for setting the author, starting-timestamp, and token
