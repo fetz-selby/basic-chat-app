@@ -6,20 +6,14 @@ import { useChatTimeline } from '../../hooks/useChatTimeline';
 import { Error } from '../Error';
 
 const Timeline = () => {
-  const { smallDevice, data, author, hasMore, next, hasError } =
-    useChatTimeline();
+  const { data, author, hasMore, next, hasError } = useChatTimeline();
 
   const renderChatMessages = useMemo(
     () =>
       data.map((message: Message) => (
-        <ChatMessage
-          key={message._id}
-          isSmallScreen={smallDevice}
-          message={message}
-          self={author}
-        />
+        <ChatMessage key={message._id} message={message} self={author} />
       )),
-    [data, author, smallDevice]
+    [data, author]
   );
 
   if (hasError) {
