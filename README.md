@@ -22,7 +22,7 @@ First, run the development server:
 npm run start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Click [app](https://spiffy-panda-7fce66.netlify.app/) to have a preview.
 
 ## Design
 
